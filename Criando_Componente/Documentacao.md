@@ -22,7 +22,8 @@ Executar o comando:
 ```
 ng g c componente-demo
 ```
-![alt text](image.png)
+
+<img src="image.png" alt="alt text" width="200">
 
 #### Exibindo o componente no navegador
 
@@ -54,5 +55,6 @@ export class AppComponent {
 
 2. Execute o servidor: `ng s`
 
-![alt text](image-1.png)
+<img src="image-1.png" alt="alt text" width="200">
+
 
