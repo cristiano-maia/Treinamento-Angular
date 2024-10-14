@@ -1,0 +1,49 @@
+<div class="container">
+    <h2 class="titulo">Exemplos de Event Binding no Angular</h2>
+  
+    <!-- Exemplo de evento de clique -->
+    <div class="cartao">
+      <h3>Clique em um botão</h3>
+      <button (click)="aoClicar()">Clique aqui</button>
+      <p>{{ mensagemClique }}</p>
+    </div>
+  
+    <!-- Exemplo de evento de teclado -->
+    <div class="cartao">
+      <h3>Pressione uma tecla</h3>
+      <input (keyup)="aoPressionarTecla($event)" placeholder="Digite algo">
+      <p>{{ mensagemTecla }}</p>
+    </div>
+  
+    <!-- Exemplo de evento de input -->
+    <div class="cartao">
+      <h3>Mudar valor de input</h3>
+      <input (input)="aoMudarValorInput($event)" placeholder="Digite seu nome">
+      <p>Valor digitado: {{ valorInput }}</p>
+    </div>
+  
+    <!-- Exemplo de mouseover -->
+    <div class="cartao">
+      <h3>Mouseover (Passar o mouse)</h3>
+      <p (mouseover)="aoPassarMouse()">Passe o mouse aqui!</p>
+      <p>{{ mensagemHover }}</p>
+    </div>
+  
+    <!-- Exemplo de focus e blur -->
+    <div class="cartao">
+      <h3>Focus e Blur</h3>
+      <input (focus)="aoFocar()" (blur)="aoPerderFoco()" placeholder="Foque neste campo">
+      <p>{{ focoCampo }}</p>
+    </div>
+  
+    <!-- Exemplo de scroll -->
+    <div class="cartao">
+      <h3>Scroll (Rolagem de página)</h3>
+      <div class="caixa-scroll" (scroll)="aoRolarPagina()">
+        Role aqui para ver o efeito!
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      </div>
+      <p>{{ rolarPagina }}</p>
+    </div>
+  </div>
+  
