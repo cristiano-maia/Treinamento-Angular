@@ -1,0 +1,53 @@
+<div class="container">
+    <h2>Quiz de Conhecimento</h2>
+  
+    <!-- Botões para alternar perguntas -->
+    <button (click)="alterarPergunta(1)">Pergunta 1</button>
+    <button (click)="alterarPergunta(2)">Pergunta 2</button>
+    <button (click)="alterarPergunta(3)">Pergunta 3</button>
+  
+    <!-- Exibição condicional com ngSwitch -->
+    <div [ngSwitch]="perguntaAtual">
+  
+      <!-- Pergunta 1 -->
+      <div *ngSwitchCase="1">
+        <h3>{{ perguntas[0].pergunta }}</h3>
+        <ul>
+          <li *ngFor="let opcao of perguntas[0].opcoes" (click)="verificarResposta(opcao)">
+            {{ opcao }}
+          </li>
+        </ul>
+      </div>
+  
+      <!-- Pergunta 2 -->
+      <div *ngSwitchCase="2">
+        <h3>{{ perguntas[1].pergunta }}</h3>
+        <ul>
+          <li *ngFor="let opcao of perguntas[1].opcoes" (click)="verificarResposta(opcao)">
+            {{ opcao }}
+          </li>
+        </ul>
+      </div>
+  
+      <!-- Pergunta 3 -->
+      <div *ngSwitchCase="3">
+        <h3>{{ perguntas[2].pergunta }}</h3>
+        <ul>
+          <li *ngFor="let opcao of perguntas[2].opcoes" (click)="verificarResposta(opcao)">
+            {{ opcao }}
+          </li>
+        </ul>
+      </div>
+  
+      <!-- Caso padrão -->
+      <div *ngSwitchDefault>
+        <h3>Escolha uma pergunta</h3>
+      </div>
+    </div>
+  
+    <!-- Feedback para a resposta -->
+    <div *ngIf="respostaEscolhida">
+      <p>Você escolheu: {{ respostaEscolhida }} - <strong>{{ feedback }}</strong></p>
+    </div>
+  </div>
+  

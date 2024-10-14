@@ -1,0 +1,16 @@
+<div class="container">
+    <h2>Lista de Tarefas</h2>
+  
+    <!-- Input para adicionar novas tarefas sem usar ngModel -->
+    <input type="text" (input)="atualizarTarefa($event)" placeholder="Nova Tarefa" [value]="novaTarefa" />
+    <button (click)="adicionarTarefa()">Adicionar Tarefa</button>
+  
+    <!-- Lista de tarefas renderizada com ngFor -->
+    <ul>
+      <li *ngFor="let tarefa of tarefas; let i = index">
+        {{ tarefa }}
+        <button (click)="removerTarefa(i)">Remover</button>
+      </li>
+    </ul>
+  </div>
+  

@@ -1,0 +1,18 @@
+<div class="container">
+    <h2>Lista de Produtos</h2>
+  
+    <ul>
+      <li *ngFor="let produto of produtos" (click)="selecionarProduto(produto)">
+        {{ produto.nome }}
+      </li>
+    </ul>
+  
+    <!-- Mostra os detalhes do produto selecionado -->
+    <div *ngIf="produtoSelecionado" class="detalhes">
+      <h3>Detalhes do Produto</h3>
+      <p><strong>Nome:</strong> {{ produtoSelecionado.nome }}</p>
+      <p><strong>Descrição:</strong> {{ produtoSelecionado.descricao }}</p>
+      <button (click)="limparSelecao()"><b>Ocultar Seleção</b></button>
+    </div>
+  </div>
+  
