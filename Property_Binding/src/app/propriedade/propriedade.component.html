@@ -1,0 +1,20 @@
+<div class="container">
+    <h2>Exemplo Simples de Property Binding</h2>
+  
+    <!-- Exemplo 1: Binding de imagem com controle de largura sem diretivas -->
+    <div class="exemplo">
+      <h3>Imagem com Largura Dinâmica</h3>
+      <img [src]="imagemUrl" [width]="larguraImagem" alt="Logo Angular">
+      <input type="range" min="100" max="500" (input)="alterarLarguraImagem($event)">
+      <p>Largura da imagem: {{ larguraImagem }}px</p>
+    </div>
+  
+    <!-- Exemplo 2: Botão habilitado/desabilitado -->
+    <div class="exemplo">
+      <h3>Controle do Botão</h3>
+      <button [disabled]="botaoDesabilitado" (click)="clicar();">Clique aqui</button>
+      <p>Status do botão: {{ botaoDesabilitado ? 'Desabilitado' : 'Habilitado' }}</p>
+      <button (click)="toggleBotao()">Alternar estado do botão</button>
+    </div>
+  </div>
+  
