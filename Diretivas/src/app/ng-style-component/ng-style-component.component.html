@@ -1,0 +1,21 @@
+<div class="container">
+    <h2>Exemplo de ngStyle</h2>
+  
+    <!-- Parágrafo com estilos aplicados dinamicamente usando ngStyle -->
+    <p [ngStyle]="{ 'color': corTexto, 'font-size.px': tamanhoFonte, 'background-color': corFundo }">
+      Este parágrafo tem estilos dinâmicos aplicados com ngStyle.
+    </p>
+  
+    <!-- Controle da cor do texto sem ngModel -->
+    <label for="corTexto">Escolha a cor do texto:</label>
+    <input type="color" id="corTexto" (input)="alterarCorTexto($event)" [value]="corTexto">
+  
+    <!-- Botões para aumentar e diminuir o tamanho da fonte -->
+    <button (click)="aumentarFonte()">Aumentar Fonte</button>
+    <button (click)="diminuirFonte()">Diminuir Fonte</button>
+  
+    <!-- Controle da cor de fundo sem ngModel -->
+    <label for="corFundo">Escolha a cor do fundo:</label>
+    <input type="color" id="corFundo" (input)="alterarCorFundo($event)" [value]="corFundo">
+  </div>
+  

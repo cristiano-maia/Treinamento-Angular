@@ -1,0 +1,19 @@
+<div class="container">
+    <h2>Exemplo Interativo de ngIf</h2>
+  
+    <!-- Mostra a mensagem se 'mostrarTexto' for verdadeiro -->
+    <div *ngIf="mostrarTexto" class="mensagem">
+      {{ mensagemAtual }}
+    </div>
+  
+    <!-- Botão para alternar entre mostrar e esconder o texto -->
+    <button (click)="alternarTexto()" [ngClass]="{ 'btn-esconder': mostrarTexto, 'btn-mostrar': !mostrarTexto }">
+      {{ mostrarTexto ? 'Esconder Texto' : 'Mostrar Texto' }}
+    </button>
+  
+    <!-- Botão para alterar a mensagem exibida -->
+    <button (click)="proximaMensagem()" [disabled]="!mostrarTexto">
+      Próxima Mensagem
+    </button>
+  </div>
+  

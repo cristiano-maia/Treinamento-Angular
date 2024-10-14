@@ -1,0 +1,18 @@
+<div class="container">
+    <h2>Exemplo de ngClass</h2>
+  
+    <!-- Parágrafo com classes aplicadas dinamicamente usando ngClass -->
+    <p [ngClass]="{ 'ativo': isActive, 'destaque': isHighlighted }">
+      Este parágrafo muda de estilo com base no estado das classes.
+    </p>
+  
+    <!-- Botões para alternar as classes -->
+    <button (click)="alternarAtivo()">
+      {{ isActive ? 'Desativar' : 'Ativar' }} Classe Ativo
+    </button>
+  
+    <button (click)="alternarDestaque()">
+      {{ isHighlighted ? 'Remover' : 'Adicionar' }} Destaque
+    </button>
+  </div>
+  

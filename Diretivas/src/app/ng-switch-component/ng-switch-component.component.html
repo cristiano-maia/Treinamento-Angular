@@ -1,0 +1,20 @@
+<div class="container">
+    <h2>Exemplo de ngSwitch</h2>
+  
+    <!-- Opções de cores -->
+    <p>Escolha uma cor:</p>
+    <button (click)="alterarCor('vermelho')" class="botao-vermelho">Vermelho</button>
+    <button (click)="alterarCor('azul')" class="botao-azul">Azul</button>
+    <button (click)="alterarCor('verde')" class="botao-verde">Verde</button>
+    <button (click)="alterarCor('amarelo')" class="botao-amarelo">Amarelo</button>
+  
+    <!-- ngSwitch para exibir diferentes caixas com base na cor escolhida -->
+    <div [ngSwitch]="corEscolhida">
+      <div *ngSwitchCase="'vermelho'" class="caixa vermelho">Você escolheu a cor Vermelho!</div>
+      <div *ngSwitchCase="'azul'" class="caixa azul">Você escolheu a cor Azul!</div>
+      <div *ngSwitchCase="'verde'" class="caixa verde">Você escolheu a cor Verde!</div>
+      <div *ngSwitchCase="'amarelo'" class="caixa amarelo">Você escolheu a cor Amarelo!</div>
+      <div *ngSwitchDefault class="caixa padrao">Nenhuma cor foi escolhida!</div>
+    </div>
+  </div>
+  

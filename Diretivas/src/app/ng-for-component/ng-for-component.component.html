@@ -1,0 +1,15 @@
+<div class="container">
+    <h2>Exemplo de ngFor</h2>
+  
+    <!-- Lista de itens -->
+    <ul>
+      <li *ngFor="let item of listaDeItens; let i = index">
+        {{ i + 1 }} - {{ item }}
+      </li>
+    </ul>
+  
+    <!-- Botões para adicionar ou remover itens -->
+    <button (click)="adicionarItem()">Adicionar Item</button>
+    <button (click)="removerItem()" [disabled]="listaDeItens.length === 0">Remover Último Item</button>
+  </div>
+  

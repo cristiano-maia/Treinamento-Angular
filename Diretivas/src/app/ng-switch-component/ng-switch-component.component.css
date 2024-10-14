@@ -1,0 +1,71 @@
+.container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  h2 {
+    color: #000000;
+    margin-bottom: 20px;
+  }
+  
+  .caixa {
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    color: white;
+    font-size: 30px
+  }
+  
+  .vermelho {
+    background-color: #f44336;
+  }
+  
+  .azul {
+    background-color: #2196f3;
+  }
+  
+  .verde {
+    background-color: #4CAF50;
+  }
+  
+  .amarelo {
+    background-color: #ffeb3b;
+    color: black;
+  }
+  
+  .padrao {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Estilos dos botões coloridos */
+  button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  
+  .botao-vermelho {
+    background-color: #f44336;
+  }
+  
+  .botao-azul {
+    background-color: #2196f3;
+  }
+  
+  .botao-verde {
+    background-color: #4CAF50;
+  }
+  
+  .botao-amarelo {
+    background-color: #ffeb3b;
+    color: black;
+  }
+  
