@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="cartao">
+      <div class="cabecalho-cartao">
+        <h2>Painel de Informações</h2>
+      </div>
+      <div class="corpo-cartao">
+        <!-- Seção de Produto -->
+        <div class="secao produto">
+          <h3>Produto</h3>
+          <ul>
+            <li><strong>Nome:</strong> {{ produto.nome }}</li>
+            <li><strong>Descrição:</strong> {{ produto.descricao }}</li>
+            <li><strong>Estoque disponível:</strong> {{ produto.estoque }}</li>
+            <li><strong>Preço:</strong> R$ {{ produto.preco }}</li>
+            <li><strong>Preço com Desconto:</strong> R$ {{ produto.precoComDesconto.toFixed(2) }}</li>
+          </ul>
+        </div>
+  
+        <!-- Seção de Usuário -->
+        <div class="secao usuario">
+          <h3>Usuário</h3>
+          <ul>
+            <li><strong>Nome:</strong> {{ usuario.nome }}</li>
+            <li><strong>Email:</strong> {{ usuario.email }}</li>
+            <li><strong>Endereço:</strong> {{ usuario.endereco.cidade }}, {{ usuario.endereco.estado }}</li>
+          </ul>
+        </div>
+  
+        <!-- Seção de Cálculos Dinâmicos -->
+        <div class="secao calculos">
+          <h3>Cálculos Dinâmicos</h3>
+          <p>O valor total para 3 unidades do produto com desconto é: <strong>R$ {{ valorTotal }}</strong></p>
+          <p>A soma de 20 + 10 é: <strong>{{ 20 + 10 }}</strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  

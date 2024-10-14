@@ -1,0 +1,78 @@
+/* Estilos globais */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+  }
+  
+  .cartao {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .cabecalho-cartao {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  .cabecalho-cartao h2 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .corpo-cartao {
+    padding: 20px;
+  }
+  
+  .secao {
+    margin-bottom: 30px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Cores das seções */
+  .produto {
+    background-color: #e0f7fa;
+  }
+  
+  .usuario {
+    background-color: #e8f5e9;
+  }
+  
+  .calculos {
+    background-color: #fff3e0;
+  }
+  
+  .secao h3 {
+    margin-top: 0;
+    color: #333;
+    font-size: 20px;
+  }
+  
+  .secao ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .secao ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .secao ul li strong {
+    color: #000;
+  }
+  
