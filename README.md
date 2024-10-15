@@ -1,5 +1,5 @@
 
-<img src="image.png" width="350">
+<img src=logo-angular1.png width="350" alt="Angular 17">
 
 
 1. Instalando o Angular 17
