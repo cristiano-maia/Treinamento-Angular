@@ -1,0 +1,78 @@
+/* Estilo geral para o contêiner do formulário */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilo do título */
+  h2 {
+    font-size: 1.8rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo dos labels */
+  label {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: #555;
+  }
+  
+  /* Estilo dos campos de input */
+  input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  input[type="text"]:focus, input[type="email"]:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.3);
+  }
+  
+  /* Estilo do botão de envio */
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Estilo para a exibição dos dados inseridos */
+  p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  p strong {
+    color: #333;
+  }
+  
+  /* Estilo de espaçamento no topo */
+  .mt-4 {
+    margin-top: 1.5rem;
+  }
+  
+  
