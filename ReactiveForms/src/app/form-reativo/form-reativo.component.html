@@ -1,0 +1,33 @@
+<div class="container mt-4">
+    <h2>Cadastro Reativo</h2>
+  
+    <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+  
+      <div class="mb-3">
+        <label for="nome" class="form-label">Nome</label>
+        <input type="text" id="nome" formControlName="nome" class="form-control" placeholder="Digite seu nome" />
+  
+        <!-- Exibe mensagem de erro se o campo de nome for inválido e tocado -->
+        <div *ngIf="formulario.get('nome')?.invalid && formulario.get('nome')?.touched">
+          <small class="text-danger">Nome é obrigatório e deve ter no mínimo 3 caracteres.</small>
+        </div>
+      </div>
+  
+      <div class="mb-3">
+        <label for="email" class="form-label">E-mail</label>
+        <input type="email" id="email" formControlName="email" class="form-control" placeholder="Digite seu e-mail" />
+  
+        <!-- Exibe mensagem de erro se o campo de e-mail for inválido e tocado -->
+        <div *ngIf="formulario.get('email')?.invalid && formulario.get('email')?.touched">
+          <small class="text-danger">E-mail é obrigatório e deve ser válido.</small>
+        </div>
+      </div>
+  
+      <button type="submit" class="btn btn-primary" [disabled]="formulario.invalid">Enviar</button>
+    </form>
+  
+    <p class="mt-4">Dados inseridos:</p>
+    <p><strong>Nome:</strong> {{ formulario.value.nome }}</p>
+    <p><strong>Email:</strong> {{ formulario.value.email }}</p>
+  </div>
+  
