@@ -103,5 +103,5 @@ O **Reactive Forms** oferece mais controle e flexibilidade para criar formulári
 
 ## Exemplo Reactive Forms
 
-![alt text](image.png)
+
 <img src="image.png" alt="Reactive Forms" width="500">
