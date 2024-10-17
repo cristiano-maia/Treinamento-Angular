@@ -1,0 +1,47 @@
+
+.container {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 0px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    text-align: left;
+  }
+  
+  h2 {
+    color: #181c21;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 1.1rem;
+    margin: 20px 0;
+    color: #333;
+  }
+  
+  p strong {
+    color: #007bff;
+  }
+  
+  p:nth-child(even) {
+    background-color: #e9ecef;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .container p {
+    line-height: 1.5;
+  }
+  
+  p:hover {
+    background-color: #dee2e6;
+  }
+  
+  .pcustom{
+    background-color: rgb(220, 220, 220);
+    
+    
+  }
