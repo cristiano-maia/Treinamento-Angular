@@ -77,3 +77,7 @@ Agora, você pode usar o pipe personalizado no template:
 ## Conclusão
 
 Os pipes são uma ferramenta poderosa para transformar dados de forma simples e eficiente nos templates do Angular. Além dos pipes nativos, o Angular permite a criação de pipes personalizados, possibilitando maior flexibilidade no processamento de dados para exibição.
+
+
+### Exemplo Pipes
+<img src="image.png" alt="pipes" width="400">
