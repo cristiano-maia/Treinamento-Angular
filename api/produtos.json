@@ -1,9 +1,9 @@
 {
   "produtos": [
     {
+      "id": 1,
       "nome": "Galaxy S24",
-      "valor": 5000,
-      "id": 1
+      "valor": 5000
     },
     {
       "nome": "iPhone 15",
@@ -11,24 +11,9 @@
       "id": 2
     },
     {
-      "id": 3,
-      "nome": "asdasd",
-      "valor": 2
-    },
-    {
       "id": 4,
-      "nome": null,
-      "valor": null
-    },
-    {
-      "id": 5,
-      "nome": "dsadasd",
-      "valor": 3
-    },
-    {
-      "id": 6,
-      "nome": "",
-      "valor": null
+      "nome": "Cristiano Maia",
+      "valor": 16
     }
   ]
 }
