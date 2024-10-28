@@ -1,0 +1,1 @@
+ng test --include src/app/componente17/componente17.component.spec.ts
